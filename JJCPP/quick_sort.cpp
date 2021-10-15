@@ -44,7 +44,7 @@ void handleRightCursor(int i, int& j, int* r)
 	}
 }
 //»®·Ö
-int Partition(int r[], int first, int end)
+int Partition2(int r[], int first, int end)
 {
 	int i = first;
 	int j = end;
@@ -63,7 +63,7 @@ void QuickSortCircle(int r[], int first, int end)
 
 	if (first < end)
 	{
-		int pivot = Partition(r, first, end);
+		int pivot = Partition2(r, first, end);
 		QuickSortCircle(r, first, pivot - 1);
 		QuickSortCircle(r, pivot + 1, end);
 	}

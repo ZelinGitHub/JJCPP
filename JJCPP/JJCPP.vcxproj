@@ -151,22 +151,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Users\Zelin\Desktop\LiteralConstTest.cpp" />
-    <ClCompile Include="..\..\..\Users\Zelin\Desktop\VeriableTest.cpp" />
     <ClCompile Include="array_test.cpp" />
     <ClCompile Include="bin_find.cpp" />
     <ClCompile Include="bubble_sort.cpp" />
+    <ClCompile Include="ConstExpressionTest.cpp" />
+    <ClCompile Include="ConstPointerTest.cpp" />
+    <ClCompile Include="ConstReferenceTest.cpp" />
     <ClCompile Include="fuck_a.cpp" />
     <ClCompile Include="fuck_b.cpp" />
     <ClCompile Include="function_test.cpp" />
     <ClCompile Include="insert_sort.cpp" />
     <ClCompile Include="io_test.cpp" />
+    <ClCompile Include="LiteralConstTest.cpp" />
+    <ClCompile Include="LowLevelConstCopyTest.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="quick_sort.cpp" />
     <ClCompile Include="quick_sort_x.cpp" />
     <ClCompile Include="select_sort.cpp" />
     <ClCompile Include="string_test.cpp" />
+    <ClCompile Include="TypeAliasTest.cpp" />
     <ClCompile Include="vector_test.cpp" />
+    <ClCompile Include="VeriableTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bubble_sort.h" />
