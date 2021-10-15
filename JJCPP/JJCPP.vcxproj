@@ -162,6 +162,7 @@
     <ClCompile Include="function_test.cpp" />
     <ClCompile Include="insert_sort.cpp" />
     <ClCompile Include="io_test.cpp" />
+    <ClCompile Include="IteratorTest.cpp" />
     <ClCompile Include="LiteralConstTest.cpp" />
     <ClCompile Include="LowLevelConstCopyTest.cpp" />
     <ClCompile Include="main.cpp" />

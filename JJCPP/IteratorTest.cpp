@@ -1,4 +1,5 @@
 #include <string>
+#include <vector>
 using namespace std;
 
 void fuckStringIteratorDereference() {
@@ -14,8 +15,13 @@ void fuckStringIteratorDereference() {
 
 void fuckStringIteratorPlus() {
 	string s("some string");
-	//依次处理s的字符，直到处理完全部字符，或者遇到空格
+	//依次处理s的字符，直到遇到空格或处理完所有字符
 	for (auto it = s.begin(); it != s.end() && !isspace(*it); ++it) {
 		*it = toupper(*it);
 	}
+}
+
+void fuckVectorConstIterator() {
+	vector<int> v;
+	auto it3 = v.cbegin();
 }

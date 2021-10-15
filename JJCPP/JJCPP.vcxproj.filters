@@ -84,6 +84,9 @@
     <ClCompile Include="TypeAliasTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="IteratorTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sales_data.h">
