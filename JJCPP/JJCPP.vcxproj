@@ -157,6 +157,7 @@
     <ClCompile Include="ConstExpressionTest.cpp" />
     <ClCompile Include="ConstPointerTest.cpp" />
     <ClCompile Include="ConstReferenceTest.cpp" />
+    <ClCompile Include="CStringTest.cpp" />
     <ClCompile Include="fuck_a.cpp" />
     <ClCompile Include="fuck_b.cpp" />
     <ClCompile Include="function_test.cpp" />

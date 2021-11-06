@@ -87,6 +87,9 @@
     <ClCompile Include="IteratorTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="CStringTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sales_data.h">
