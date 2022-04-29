@@ -11,5 +11,5 @@ void fuckTypeAlias() {
 
 typedef char* pstring;
 const pstring cstr = 0;
-const char* cstr = 0;//是对const pstring cstr 的错误理解
-char* const cstr = 0;//是对const pstring cstr 的正确理解
+//const char* cstr = 0;//是对const pstring cstr 的错误理解
+//char* const cstr = 0;//是对const pstring cstr 的正确理解
