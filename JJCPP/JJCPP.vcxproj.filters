@@ -63,10 +63,31 @@
     <ClCompile Include="quick_sort_x.cpp">
       <Filter>源文件\algorithm</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Users\Zelin\Desktop\LiteralConstTest.cpp">
+    <ClCompile Include="LiteralConstTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Users\Zelin\Desktop\VeriableTest.cpp">
+    <ClCompile Include="VeriableTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstReferenceTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstPointerTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LowLevelConstCopyTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstExpressionTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeAliasTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IteratorTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CStringTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
