@@ -19,12 +19,12 @@ void TestVector()
 	vector<vector<string>>file;
 
 	//空向量
-	vector<int> v2;
-	for (int i = 0; i != 100; ++i)
-	{
-		//把元素依次放到向量末端
-		v2.push_back(i);
-	}
+	//vector<int> v2;
+	//for (int i = 0; i != 100; ++i)
+	//{
+	//	//把元素依次放到向量末端
+	//	v2.push_back(i);
+	//}
 
 
 }
