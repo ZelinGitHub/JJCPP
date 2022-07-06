@@ -127,7 +127,8 @@ string& shorterString2(string& s1, string& s2) {
 	//常量参数版本的shortString函数的返回值类型是常量引用，因为不能拷贝常量引用到普通引用，所以必须将返回值转换为非常量才可以返回
 	return const_cast<string&>(r);
 }
-bool lengthCompare(const string&, const  string&) {
+bool lengthCompare(const string& s1, const  string& s2) {
+	cout << s1 << " " << s2<<endl;
 	return false;
 }
 string::size_type sumLength(const string&, const  string&) {
@@ -137,9 +138,29 @@ bool cstringCompare(const char*, const  char*) {
 	return false;
 }
 
-
+//定义一个函数指针
 bool (*pf)(const string&, const string&);
 
+/*参数3是函数指针*/
+void useBigger(const string& s1, const string& s2, bool(*pf)(const string&, const string&)) {
+	//使用函数指针调用函数
+	(*pf)("u", "die");
+	std::cout <<s1<<" "<< s2 << endl;
+}
+
+void useBigger2(const string& s1, const string& s2, bool pf(const string&, const string&)) {
+	std::cout << "useBigger" << endl;
+}
+
+int f2(int* ip, int i) {
+	cout << *ip <<" "<< i << endl;
+	return 0;
+}
+
+int (*f1(int i))(int*, int) {
+	cout << i << endl;
+	return f2;
+}
 
 void fuckFunctionPointer() {
 
@@ -147,11 +168,11 @@ void fuckFunctionPointer() {
 	pf = &lengthCompare;
 	//取地址符可以省略
 	pf = lengthCompare;
-	//使用函数指针调用函数
+	//调用函数 使用函数指针
 	bool b1=(*pf)("hello", "fuck u");
-	//解引用操作可以省略
+	//调用函数 解引用操作可以省略
 	bool b2=pf("hello", "fuck u");
-	//等价的函数调用
+	//调用函数 等价的函数调用
 	bool b3= lengthCompare("hello", "fuck u");
 	//初始化为空指针
 	pf = 0;
@@ -160,7 +181,12 @@ void fuckFunctionPointer() {
 
 	//pf = sumLength;	//错误：返回类型不匹配，不是同一个函数类型
 	//pf = cstringCompare;	//错误：形参类型不匹配，不是同一个函数类型
-
+	
+	//调用函数 传入一个函数的地址作为参数
+	useBigger("good","yeah", & lengthCompare);
+	//调用函数 省略取地址符
+	//自动将函数名lengthCompare转换成指向该函数的指针
+	useBigger("good","yeah", lengthCompare);
 }
 
 

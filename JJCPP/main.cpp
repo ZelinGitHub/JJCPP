@@ -22,8 +22,12 @@ using namespace std;
 //主函数的返回值必须为int
 int main()
 {
-	fuckReferenceToConst();
-	fuckPointerToConst();
+	//fuckReferenceToConst();
+	//fuckPointerToConst();
+	//fuckFunctionPointer();
+	int a = 3;
+	int b=(*f1(1))(&a,22);
+	cout << b << endl;
 	return 0;
 }
 
