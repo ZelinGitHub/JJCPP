@@ -8,10 +8,8 @@ void TestArrayName();
 void TestArrayNamePlus();
 void TestArrayPointer();
 void TestArrayReference();
-<<<<<<< HEAD
 void TestManyDimensionsArray();
 void TestManyDimensionsArray2();
-=======
 void fuckReferenceToConst();
 void fuckPointerToConst();
 bool lengthCompare( const string&, const  string&);
@@ -34,5 +32,4 @@ int (*f1(int))(int*, int);
 using PF = int(*)(int*, int);
 //F是函数类型，不是函数指针类型
 using F = int(int*, int);
->>>>>>> 43b1e6023d95704bbd0b462167962161f01bc679
 #endif
