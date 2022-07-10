@@ -22,7 +22,16 @@ using namespace std;
 //主函数的返回值必须为int
 int main()
 {
+<<<<<<< HEAD
 	TestManyDimensionsArray2();
+=======
+	//fuckReferenceToConst();
+	//fuckPointerToConst();
+	//fuckFunctionPointer();
+	int a = 3;
+	int b=(*f1(1))(&a,22);
+	cout << b << endl;
+>>>>>>> 43b1e6023d95704bbd0b462167962161f01bc679
 	return 0;
 }
 

@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 void fuckConstReference() {
 	const int ci = 1024;
 	const int& r1 = ci;
@@ -9,6 +12,12 @@ void fuckConstReferenceToConst() {
 	const int ci = 1024;
 	const int& r1 = ci; //正确
 	//int &r2 = ci; //错误：试图让一个非常量引用指向一个常量对象
+}
+void fuckReferenceToConst() {
+	int ci = 1024;
+	int& r = ci;
+	const int& cr = r; //正确
+	cout << r << endl;
 }
 
 void fuckConstReferenceToVar() {

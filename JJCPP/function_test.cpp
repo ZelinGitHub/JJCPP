@@ -94,3 +94,99 @@ int fuckFact() {
 	std::cout << "5! is " << j << std::endl;
 	return 0;
 }
+
+//得到更短的字符串
+//参数1和参数2都是常量引用
+//返回值也是常量引用
+const string& shorterString(const string& s1, const string& s2) {
+	return s1.size() <= s2.size() ? s1 : s2;
+}
+
+//得到更短的字符串
+//参数1和参数2都是普通引用
+//返回值而是普通引用
+string& shorterString(string& s1, string& s2) {
+	//另一个重载版本的方法的参数是常量引用，如果要调用另一个重载版本的方法，需要转换参数为常量
+	//如果不这样做，编译器优先会选择非常量参数的方法，也是当前方法，导致递归调用
+	//auto& r = shorterString(s1, s2);
+	auto& r = shorterString(const_cast<const string&>(s1), const_cast<const string&>(s2));
+	//另一个重载版本的方法的返回值类型是常量引用，因为不能拷贝常量引用到普通引用，所以必须将返回值转换为非常量才可以返回
+	return const_cast<string&>(r);
+}
+
+
+//得到更短的字符串
+//参数1和参数2都是普通引用
+//返回值而是普通引用
+string& shorterString2(string& s1, string& s2) {
+	//试图调用常量参数版本的shortString函数，需要转换参数为常量，否则编译器优先会选择非常量参数的方法
+	//不使用const_cast也可以转换变量为常量
+	const string& sc1 = s1;
+	const string& sc2 = s2;
+	auto& r = shorterString(sc1, sc2);
+	//常量参数版本的shortString函数的返回值类型是常量引用，因为不能拷贝常量引用到普通引用，所以必须将返回值转换为非常量才可以返回
+	return const_cast<string&>(r);
+}
+bool lengthCompare(const string& s1, const  string& s2) {
+	cout << s1 << " " << s2<<endl;
+	return false;
+}
+string::size_type sumLength(const string&, const  string&) {
+	return 0;
+}
+bool cstringCompare(const char*, const  char*) {
+	return false;
+}
+
+//定义一个函数指针
+bool (*pf)(const string&, const string&);
+
+/*参数3是函数指针*/
+void useBigger(const string& s1, const string& s2, bool(*pf)(const string&, const string&)) {
+	//使用函数指针调用函数
+	(*pf)("u", "die");
+	std::cout <<s1<<" "<< s2 << endl;
+}
+
+void useBigger2(const string& s1, const string& s2, bool pf(const string&, const string&)) {
+	std::cout << "useBigger" << endl;
+}
+
+int f2(int* ip, int i) {
+	cout << *ip <<" "<< i << endl;
+	return 0;
+}
+
+int (*f1(int i))(int*, int) {
+	cout << i << endl;
+	return f2;
+}
+
+void fuckFunctionPointer() {
+
+	//初始化函数指针
+	pf = &lengthCompare;
+	//取地址符可以省略
+	pf = lengthCompare;
+	//调用函数 使用函数指针
+	bool b1=(*pf)("hello", "fuck u");
+	//调用函数 解引用操作可以省略
+	bool b2=pf("hello", "fuck u");
+	//调用函数 等价的函数调用
+	bool b3= lengthCompare("hello", "fuck u");
+	//初始化为空指针
+	pf = 0;
+	//初始化为空指针
+	pf = nullptr;
+
+	//pf = sumLength;	//错误：返回类型不匹配，不是同一个函数类型
+	//pf = cstringCompare;	//错误：形参类型不匹配，不是同一个函数类型
+	
+	//调用函数 传入一个函数的地址作为参数
+	useBigger("good","yeah", & lengthCompare);
+	//调用函数 省略取地址符
+	//自动将函数名lengthCompare转换成指向该函数的指针
+	useBigger("good","yeah", lengthCompare);
+}
+
+
