@@ -169,6 +169,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="quick_sort.cpp" />
     <ClCompile Include="quick_sort_x.cpp" />
+    <ClCompile Include="Sales_data.cpp" />
     <ClCompile Include="select_sort.cpp" />
     <ClCompile Include="string_test.cpp" />
     <ClCompile Include="TypeAliasTest.cpp" />

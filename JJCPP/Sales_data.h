@@ -14,7 +14,8 @@ struct Sales_data {
 	//定义成员函数
 	std::string isbn()const { return bookNo; }
 	//声明成员函数
-	Sales_data& compare(const Sales_data&);
+	Sales_data& combine(const Sales_data&);
+	Sales_data combine2(const Sales_data&);
 	double avg_price() const;
 	//定义数据成员
 	std::string bookNo;

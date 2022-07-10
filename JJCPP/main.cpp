@@ -12,6 +12,7 @@
 #include "quick_sort.h"
 #include "insert_sort.h"
 #include "fuck.h"
+#include "Sales_data.h"
 using namespace std;
 
 
@@ -25,9 +26,13 @@ int main()
 	//fuckReferenceToConst();
 	//fuckPointerToConst();
 	//fuckFunctionPointer();
-	int a = 3;
-	int b=(*f1(1))(&a,22);
-	cout << b << endl;
+	//int a = 3;
+	//int b=(*f1(1))(&a,22);
+	//cout << b << endl;
+	//定义Sales_data类型的变量（创建对象）
+	Sales_data total;
+	Sales_data trans;
+	total.combine(trans);
 	return 0;
 }
 
