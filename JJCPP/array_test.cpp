@@ -38,10 +38,67 @@ void TestArrayPointer() {
 void TestArrayReference() {
 	int arr[5] = { 1,2,3,4,5 };
 	int(&arrRef)[5] = arr;
-	std::cout << arrRef << std::endl;
-	std::cout << *arrRef << std::endl;
-	std::cout << *(arrRef+1) << std::endl;
-	std::cout << *(arrRef+2) << std::endl;
-	std::cout << *(arrRef+3) << std::endl;
-	std::cout << *(arrRef+4) << std::endl;
+	std::cout <<"arrRef: "<< arrRef << std::endl;
+	std::cout << "&arrRef: " << &arrRef << std::endl;
+	std::cout << "*(&arrRef): " << *(&arrRef) << std::endl;
+	std::cout << "*arrRef: " << *arrRef << std::endl;
+	std::cout << "*(arrRef+1): " << *(arrRef+1) << std::endl;
+	std::cout << "*(arrRef+2): " << *(arrRef+2) << std::endl;
+	std::cout << "*(arrRef+3): " << *(arrRef+3) << std::endl;
+	std::cout << "*(arrRef+4): " << *(arrRef+4) << std::endl;
+}
+
+void TestManyDimensionsArray() {
+	int ia[3][4] = {
+   {0,1,2,3},
+   {4,5,6,7},
+   {8,9,10,11}
+	};
+	std::cout << "ia: "<<ia << std::endl;
+	std::cout << "ia[0]: " << ia[0] << std::endl;
+	std::cout << "ia[0]+1: " << ia[0] + 1 << std::endl;
+	std::cout << "ia[0]+2: " << ia[0] + 2 << std::endl;
+	std::cout << "ia[0]+3: " << ia[0] + 3 << std::endl;
+	std::cout << "ia[1]: " << ia[1] << std::endl;
+	std::cout << "ia[1]+1: " << ia[1] + 1 << std::endl;
+	std::cout << "ia[1]+2: " << ia[1] + 2 << std::endl;
+	std::cout << "ia[1]+3: " << ia[1] + 3 << std::endl;
+	std::cout << "ia[2]: " << ia[2] << std::endl;
+	std::cout << "ia[2]+1: " << ia[2] + 1 << std::endl;
+	std::cout << "ia[2]+2: " << ia[2] + 2 << std::endl;
+	std::cout << "ia[2]+3: " << ia[2] + 3 << std::endl;
+	std::cout << "&ia: "<< &ia << std::endl;
+	std::cout << "&ia[0]: " << &ia[0] << std::endl;
+	std::cout << "&ia[1]: " << &ia[1] << std::endl;
+	std::cout << "&ia[2]: " << &ia[2] << std::endl;
+	std::cout << "*ia: " << *(ia) << std::endl;
+	std::cout << "*(ia[0]): " << *(ia[0]) << std::endl;
+	std::cout << "*(ia[0]+1): " << *(ia[0]+1) << std::endl;
+	std::cout << "*(ia[0]+2): " << *(ia[0]+2) << std::endl;
+	std::cout << "*(ia[0]+3): " << *(ia[0]+3) << std::endl;
+	std::cout << "*(ia[1]): " << *(ia[1]) << std::endl;
+	std::cout << "*(ia[1]+1): " << *(ia[1] + 1) << std::endl;
+	std::cout << "*(ia[1]+2): " << *(ia[1] + 2) << std::endl;
+	std::cout << "*(ia[1]+3): " << *(ia[1] + 3) << std::endl;
+	std::cout << "*(ia[2]): " << *(ia[2]) << std::endl;
+	std::cout << "*(ia[2]+1): " << *(ia[2] + 1) << std::endl;
+	std::cout << "*(ia[2]+2): " << *(ia[2] + 2) << std::endl;
+	std::cout << "*(ia[2]+3): " << *(ia[2] + 3) << std::endl;
+
+}
+void TestManyDimensionsArray2() {
+	int ia[3][4] = {
+   {0,1,2,3},
+   {4,5,6,7},
+   {8,9,10,11}
+	};
+	int(*p)[4] = ia;
+	cout << "*p: " << *p << endl;
+	cout << "**p: " << **p << endl;
+	p = &ia[1];
+	cout << "*p: " << *p << endl;
+	cout << "**p: " << **p << endl;
+	p = &ia[2];
+	cout << "*p: " << *p << endl;
+	cout << "**p: " << **p << endl;
 }

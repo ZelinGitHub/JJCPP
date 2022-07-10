@@ -22,7 +22,7 @@ using namespace std;
 //主函数的返回值必须为int
 int main()
 {
-	TestArrayName();
+	TestManyDimensionsArray2();
 	return 0;
 }
 

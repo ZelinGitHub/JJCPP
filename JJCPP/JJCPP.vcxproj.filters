@@ -19,21 +19,15 @@
     <Filter Include="源文件\algorithm">
       <UniqueIdentifier>{5f7cd83c-e023-4845-9e08-3b980a599f55}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\datatype">
+      <UniqueIdentifier>{a4d32eb1-2606-4559-8805-99dc39bfb8f2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="io_test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="string_test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="vector_test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="array_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="function_test.cpp">
@@ -63,32 +57,41 @@
     <ClCompile Include="quick_sort_x.cpp">
       <Filter>源文件\algorithm</Filter>
     </ClCompile>
-    <ClCompile Include="LiteralConstTest.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="VeriableTest.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\datatype</Filter>
     </ClCompile>
-    <ClCompile Include="ConstReferenceTest.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ConstPointerTest.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="LowLevelConstCopyTest.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ConstExpressionTest.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="vector_test.cpp">
+      <Filter>源文件\datatype</Filter>
     </ClCompile>
     <ClCompile Include="TypeAliasTest.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\datatype</Filter>
     </ClCompile>
     <ClCompile Include="IteratorTest.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\datatype</Filter>
     </ClCompile>
     <ClCompile Include="CStringTest.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\datatype</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstReferenceTest.cpp">
+      <Filter>源文件\datatype</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstPointerTest.cpp">
+      <Filter>源文件\datatype</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstExpressionTest.cpp">
+      <Filter>源文件\datatype</Filter>
+    </ClCompile>
+    <ClCompile Include="array_test.cpp">
+      <Filter>源文件\datatype</Filter>
+    </ClCompile>
+    <ClCompile Include="LowLevelConstCopyTest.cpp">
+      <Filter>源文件\datatype</Filter>
+    </ClCompile>
+    <ClCompile Include="LiteralConstTest.cpp">
+      <Filter>源文件\datatype</Filter>
+    </ClCompile>
+    <ClCompile Include="string_test.cpp">
+      <Filter>源文件\datatype</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
