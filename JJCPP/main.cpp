@@ -30,10 +30,12 @@ int main()
 	//int b=(*f1(1))(&a,22);
 	//cout << b << endl;
 	//定义Sales_data类型的变量（创建对象）
-	//Sales_data total;
-	//Sales_data trans;
+	Sales_data total;
+	Sales_data trans;
 	//total.combine(trans);
-	Sales_data sales_data{"abc"};
+	//Sales_data sales_data{"abc"};
+	//调用默认构造函数创建对象
+	Sales_data sales_data;
 	cout << "sales_data.bookNo: " << sales_data.bookNo << endl;
 	cout << "sales_data.units_sold: " << sales_data.units_sold << endl;
 	cout << "sales_data.revenue: " << sales_data.revenue;
