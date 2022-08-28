@@ -189,4 +189,19 @@ void fuckFunctionPointer() {
 	useBigger("good","yeah", lengthCompare);
 }
 
+size_t count_calls()
+{
+	//创建局部静态对象
+	//调用结束后，这个值仍然有效
+	static size_t ctr = 0;
+	return ++ctr;
+}
+
+int fuckCount_calls() {
+	for (size_t i = 0; i != 10; ++i) {
+		cout << count_calls() << endl;
+	}
+	return 0;
+}
+
 

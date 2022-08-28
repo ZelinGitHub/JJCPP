@@ -22,12 +22,26 @@ Sales_data& Sales_data::combine(const Sales_data& rhs) {
 	revenue += rhs.revenue;
 	//返回调用该函数的对象
 	return *this; 
+}//成员函数的定义
+const Sales_data& Sales_data::combine4(const Sales_data& rhs) const {
+	//返回调用该函数的对象
+	return *this; 
 }
 //成员函数的定义
 Sales_data Sales_data::combine2(const Sales_data& rhs) {
 	//把rhs的成员加到this对象的成员上
 	units_sold += rhs.units_sold;
 	revenue += rhs.revenue;
+	//返回调用该函数的对象
+	return *this; 
+}
+//成员函数的定义
+Sales_data Sales_data::combine3(const Sales_data& rhs) const{
+	//返回调用该函数的对象
+	return *this; 
+}
+//成员函数的定义
+const Sales_data Sales_data::combine5(const Sales_data& rhs) const{
 	//返回调用该函数的对象
 	return *this; 
 }

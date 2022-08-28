@@ -19,4 +19,9 @@ void fuckPointerToConst() {
 void fuckConstPointerToVar() {
 	double dval = 3.14;
 	const double* cptr = &dval; //正确但是不能通过cptr改变dval的值
+	double dval2 = *cptr;
+	const double dval3 = *cptr;
+	cout << "dval: " << dval << endl;
+	cout <<"dval2: "<< dval2 << endl;
+	cout<<"dval3: "<< dval3 << endl;
 }

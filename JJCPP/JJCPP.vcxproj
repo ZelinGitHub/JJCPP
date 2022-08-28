@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Account.cpp" />
     <ClCompile Include="array_test.cpp" />
     <ClCompile Include="bin_find.cpp" />
     <ClCompile Include="bubble_sort.cpp" />
@@ -170,13 +171,16 @@
     <ClCompile Include="quick_sort.cpp" />
     <ClCompile Include="quick_sort_x.cpp" />
     <ClCompile Include="Sales_data.cpp" />
+    <ClCompile Include="Screen.cpp" />
     <ClCompile Include="select_sort.cpp" />
     <ClCompile Include="string_test.cpp" />
     <ClCompile Include="TypeAliasTest.cpp" />
     <ClCompile Include="vector_test.cpp" />
     <ClCompile Include="VeriableTest.cpp" />
+    <ClCompile Include="Window_mgr.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Account.h" />
     <ClInclude Include="bubble_sort.h" />
     <ClInclude Include="fDeclare.h" />
     <ClInclude Include="bin_find.h" />
@@ -184,6 +188,8 @@
     <ClInclude Include="insert_sort.h" />
     <ClInclude Include="quick_sort.h" />
     <ClInclude Include="Sales_data.h" />
+    <ClInclude Include="Screen.h" />
+    <ClInclude Include="Window_mgr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

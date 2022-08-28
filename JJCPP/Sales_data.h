@@ -11,11 +11,18 @@ using namespace std;
 头文件代码会原封不动复制到源文件
 */
 struct Sales_data {
+	friend Sales_data add(const Sales_data&, const Sales_data&);
+	friend std::istream& read(std::istream&, Sales_data&);
+	friend std::ostream& print(std::ostream&, const Sales_data&);
+public:
 	//定义构造函数
-	//定义默认构造函数
+	//定义默认构造函数，使用构造函数初始值列表
 	Sales_data() : units_sold(2) {
 
 	}
+	//定义默认构造函数
+	//Sales_data() {
+	//}
 	//Sales_data() = default;
 	//定义构造函数，只初始化bookNo
 	//编译器将赋予其他成员默认值，如果内置类型或复合类型的其他成员没有显式初始化，则会报错
@@ -34,6 +41,10 @@ struct Sales_data {
 	//声明成员函数
 	Sales_data& combine(const Sales_data&);
 	Sales_data combine2(const Sales_data&);
+	Sales_data combine3(const Sales_data&) const;
+	const Sales_data combine5(const Sales_data&) const;
+	const Sales_data& combine4(const Sales_data&) const;
+private:
 	double avg_price() const;
 	//定义数据成员
 	std::string bookNo;

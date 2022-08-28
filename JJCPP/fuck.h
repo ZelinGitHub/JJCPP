@@ -12,6 +12,7 @@ void TestManyDimensionsArray();
 void TestManyDimensionsArray2();
 void fuckReferenceToConst();
 void fuckPointerToConst();
+void fuckConstPointerToVar();
 bool lengthCompare( const string&, const  string&);
 string::size_type sumLength(const string&, const  string&);
 //ÉùÃ÷º¯Êý
