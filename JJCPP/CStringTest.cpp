@@ -12,7 +12,8 @@ void fuckCString() {
 	//传入char类型指针
 	int size3 = strlen(str1Ptr);
 
-	char ca[] = { 'C','+','+' };
+	//char ca[] = { 'C','+','+' };
+	char ca[] = { 'C','+','+','\0'};
 	//严重错误：ca没有以空字符结束
 	cout << strlen(ca) << endl;
 }

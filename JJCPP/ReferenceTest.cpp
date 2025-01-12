@@ -1,6 +1,17 @@
 #include <iostream>
 using namespace std;
 
+void fuckReference() {
+	int ci = 1024;
+	int& r1 = ci;
+	//pr1实际指向的是对象ci，而不是引用r1
+	//使用引用r1的时候，实际上会隐式发生一次解引用
+	//用指针来解释的话，假设r1是一个指针，那么这里的r1实际上等同于(*r1)
+	int* pr1 = &r1;
+	//等价于上面的语句
+	int* pr1 = &ci;
+}
+
 void fuckConstReference() {
 	const int ci = 1024;
 	const int& r1 = ci;

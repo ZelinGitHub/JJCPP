@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -162,6 +162,8 @@
     <ClCompile Include="fuck_a.cpp" />
     <ClCompile Include="fuck_b.cpp" />
     <ClCompile Include="function_test.cpp" />
+    <ClCompile Include="HasPtr.cpp" />
+    <ClCompile Include="HasPtr2.cpp" />
     <ClCompile Include="insert_sort.cpp" />
     <ClCompile Include="io_test.cpp" />
     <ClCompile Include="IteratorTest.cpp" />
@@ -174,6 +176,7 @@
     <ClCompile Include="Screen.cpp" />
     <ClCompile Include="select_sort.cpp" />
     <ClCompile Include="string_test.cpp" />
+    <ClCompile Include="StrVec.cpp" />
     <ClCompile Include="TypeAliasTest.cpp" />
     <ClCompile Include="vector_test.cpp" />
     <ClCompile Include="VeriableTest.cpp" />
@@ -185,10 +188,13 @@
     <ClInclude Include="fDeclare.h" />
     <ClInclude Include="bin_find.h" />
     <ClInclude Include="fuck.h" />
+    <ClInclude Include="HasPtr.h" />
+    <ClInclude Include="HasPtr2.h" />
     <ClInclude Include="insert_sort.h" />
     <ClInclude Include="quick_sort.h" />
     <ClInclude Include="Sales_data.h" />
     <ClInclude Include="Screen.h" />
+    <ClInclude Include="StrVec.h" />
     <ClInclude Include="Window_mgr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
