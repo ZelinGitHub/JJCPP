@@ -72,10 +72,10 @@
     <ClCompile Include="CStringTest.cpp">
       <Filter>源文件\datatype</Filter>
     </ClCompile>
-    <ClCompile Include="ConstReferenceTest.cpp">
+    <ClCompile Include="ReferenceTest.cpp">
       <Filter>源文件\datatype</Filter>
     </ClCompile>
-    <ClCompile Include="ConstPointerTest.cpp">
+    <ClCompile Include="PointerTest.cpp">
       <Filter>源文件\datatype</Filter>
     </ClCompile>
     <ClCompile Include="ConstExpressionTest.cpp">
@@ -103,6 +103,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Account.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HasPtr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HasPtr2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StrVec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Message.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -135,6 +147,18 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Account.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HasPtr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HasPtr2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StrVec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

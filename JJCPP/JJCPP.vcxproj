@@ -156,8 +156,9 @@
     <ClCompile Include="bin_find.cpp" />
     <ClCompile Include="bubble_sort.cpp" />
     <ClCompile Include="ConstExpressionTest.cpp" />
-    <ClCompile Include="ConstPointerTest.cpp" />
-    <ClCompile Include="ConstReferenceTest.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="PointerTest.cpp" />
+    <ClCompile Include="ReferenceTest.cpp" />
     <ClCompile Include="CStringTest.cpp" />
     <ClCompile Include="fuck_a.cpp" />
     <ClCompile Include="fuck_b.cpp" />
@@ -191,6 +192,7 @@
     <ClInclude Include="HasPtr.h" />
     <ClInclude Include="HasPtr2.h" />
     <ClInclude Include="insert_sort.h" />
+    <ClInclude Include="Message.h" />
     <ClInclude Include="quick_sort.h" />
     <ClInclude Include="Sales_data.h" />
     <ClInclude Include="Screen.h" />

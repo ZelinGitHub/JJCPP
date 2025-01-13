@@ -25,3 +25,4 @@ void fuckConstPointerToVar() {
 	cout <<"dval2: "<< dval2 << endl;
 	cout<<"dval3: "<< dval3 << endl;
 }
+
